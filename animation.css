@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 800px;
+    height: 900px;
+    padding: 20px;
+    background-color: aqua;
+}
+img{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(3, 39, 70);
+    animation: round 4s backwards infinite alternate;
+}
+.container:hover > .child > img{
+    animation-play-state: paused;
+}
+
+
+@keyframes round{
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateY(700%);
+    }
+    75%{
+        transform: translateX(700%) translateY(700%);
+    }
+    100%{
+        transform: translateX(700%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
